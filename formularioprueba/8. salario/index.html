@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.js"></script>
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="forma row col-10">
+            <div class="formulario col-7">
+                <form class="row g-3 needs-validation" onsubmit="return false;" novalidate >
+                    <div class="col-md-12">
+                      <h4>Calcular salario</h4>
+                      <label for="txtPagoDia" class="form-label">Ingresar pago por dia</label>
+                      <input type="number" class="form-control" id="txtPagoDia" required>
+                      <div class="valid-feedback">  
+                        Looks good!
+                      </div>
+                      <label for="txtDias" class="form-label">Ingresar dias trabajados por mes</label>
+                      <input type="number" class="form-control" id="txtDias" required>
+                      <div class="valid-feedback">  
+                        Looks good!
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <button class="btn bg-info-subtle text-dark " type="button" onclick = "salario()">Salario <i class="fa-solid fa-hand-holding-dollar"></i> </button>
+                      <button class=" btn bg-info-subtle text-dark " type="button" onclick = "salud()">Salud <i class="fa-solid fa-house-medical"></i> </button>
+                      <button class="btn bg-info-subtle text-dark " type="button" onclick = "pension()">Pension <i class="fa-solid fa-money-bill"></i> </button>
+                      <button class="btn bg-info-subtle text-dark " type="button" onclick = "arl()">Arl <i class="fa-solid fa-money-check"></i></button>
+                      <button class="btn bg-info-subtle text-dark  mt-2" type="button" onclick = "subTrans()">Subsidio de transporte <i class="fa-solid fa-bus"></i></button>
+                      <button class="btn bg-info-subtle text-dark  mt-2" type="button" onclick = "retencion()">Retencion <i class="fa-solid fa-registered"></i></button>
+                      <button class="btn bg-info-subtle text-dark  mt-2" type="button" onclick = "pagoTotal()">Pago total <i class="fa-solid fa-money-bill-wave"></i></button>
+                    </div>
+                  </form>
+            </div>
+            <div class="respuesta col-3">
+                <h4>Salario</h4>
+                <div id="respuesta"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/validate.js"></script>
+    <script src="js/salario.js"></script>
+</body>
+</html>

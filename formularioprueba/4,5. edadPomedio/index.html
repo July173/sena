@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promediar</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="forma row col-10">
+      <div class="formulario col-7">
+        <form class="row g-3 needs-validation" onsubmit="return false;" novalidate>
+          <div class="col-md-12">
+            <h4>Promediar edades</h4>
+            <label for="txtCant" class="form-label">Cantidad de Fechas de nacimiento</label>
+            <input type="number" class="form-control" id="txtCant" required min="1">
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <button class="btn btn-secondary mt-2" type="button" onclick="generarCampos()">Generar campos <i
+                class="fa-solid fa-calendar-days"></i></button>
+            <div id="camposFechas"></div>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-primary" type="button" onclick="calcularPromedio()">Calcular promedios <i
+                class="fa-solid fa-calendar-days"></i></button>
+            <button class="btn btn-primary" type="button" onclick="mostrarEdades()">Calcular edades <i
+                class="fa-solid fa-calendar-days"></i></button>
+          </div>
+        </form>
+      </div>
+      <div class="respuesta col-3">
+        <h4>Edades y Promedios</h4>
+        <div id="promedio"></div>
+        <div id="edades"></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/validate.js"></script>
+  <script src="js/promEdad.js"></script>
+</body>
+
+</html>
