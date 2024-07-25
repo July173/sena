@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="forma row col-10">
+      <div class="formulario col-7">
+        <form class="row g-3 needs-validation" onsubmit="return false" novalidate>
+          <div class="col-md-12">
+            <label for="txtTabla" class="form-label">Ingrese hasta que numero de tabla</label>
+            <input type="number" class="form-control" id="txtTabla" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <label for="txtMultiplica" class="form-label">Ingrese hasta que numero se multiplicara</label>
+            <input type="number" class="form-control" id="txtMultiplica" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <label for="txtbob" class="form-label">¿Quiere buzz y bass? ¿si o no?</label>
+            <input type="text" class="form-control" id="txtbob" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <label for="txtpop" class="form-label">¿Quiere ver cuantos pares e impares hay? ¿si o no?</label>
+            <input type="text" class="form-control" id="txtpop" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-primary" type="button" onclick="Calcular()">Calcular tabla <i
+                class="fa-solid fa-paper-plane"></i></button>
+
+          </div>
+        </form>
+      </div>
+      <div class="respuesta col-3">
+        <h4>Tablas</h4>
+        <div id="respuesta"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/validate.js"></script>
+  <script src="js/tablas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular area mayor</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.js"></script>
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="forma row col-10">
+            <div class="formulario col-7">
+                <form class="row g-3 needs-validation" onsubmit="return false;" novalidate >
+                    <div class="col-md-12">
+                      <label for="CantRect" class="form-label fw-bold">Ingresar cantidad de rectangulos </label>
+                      <input type="number" class="form-control" id="CantRect" required>
+                      <div class="valid-feedback">  
+                        Looks good!
+                      </div>
+                    </div>
+                    
+                    <button class="btn btn-primary" type="button" onclick="generarCampos()">Campos para las bases y alturas <i class="fa-solid fa-paper-plane"></i></button>
+                    <h6>Ingresar las bases de los rectangulos</h6>
+                    <div id="base"></div>
+
+                    <h6>Ingresar las alturas de los rectangulos respectivamente segun la base</h6>
+                    <div id="altura"></div>
+
+
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="button" onclick="area()">Calcular area <i class="fa-solid fa-paper-plane"></i></button>
+                      <button class="btn btn-primary" type="button" onclick="mayor()">Calcular area mayor <i class="fa-solid fa-paper-plane"></i></button>
+
+                    </div>
+                  </form>
+            </div>
+            <div class="respuesta col-3">
+                <h4>Area de rectangulos y area mayor</h4>
+                <div id="area"></div>
+                <div id="mayor"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/validate.js"></script>
+    <script src="js/areaMayor.js"></script>
+</body>
+</html>
