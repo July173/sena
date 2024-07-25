@@ -1,0 +1,10 @@
+.contenedor{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+   
+
+}
+.bingo-card{
+    margin: 20px 10px;
+}
